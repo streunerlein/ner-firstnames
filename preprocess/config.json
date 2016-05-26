@@ -1,0 +1,6 @@
+{
+  "SAC": {
+    "files": "../data/Text+Berg_Release_151_v01/XML/SAC/*ner.xml",
+    "stopNames": ["secondo", "seconda"]
+  }
+}

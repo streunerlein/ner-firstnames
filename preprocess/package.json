@@ -1,0 +1,9 @@
+{
+  "name": "ner-firstnames-preprocess",
+  "description": "Preprocessor for ner firstnames preparation",
+  "version": "1.0.0",
+  "dependencies": {
+    "underscore": "*",
+    "async": "*"
+  }
+}

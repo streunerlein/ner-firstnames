@@ -1,0 +1,17 @@
+
+1. wieviele unterschiedliche Vornamen wurden damals und heute benutzt?
+2. wurden die Vornamen oder Nachnamen mit der Zeit länger oder kürzer?
+3. gibt es mehr oder weniger Namen mit Bindestrichen?
+4. stimmen die jeweils häufigsten Vornamen im Text+Berg-Korpus mit anderen Häufigkeitslisten überein?
+5. welche Auswirkungen haben Deine Beobachtungen für das Personen-NER im bisherigen Korpus und in zukünftigen Ausgaben der ALPEN?
+
+Schritte bisher
+
+1. Extraktion der Vornamen aus den Text+Berg NER annotierten XML Files
+
+2. Daten bereinigen und Kriterien für "Vornamen" finden
+
+3. Varianten mit einbeziehen (für unterschiedliche Vornamen)
+
+=> Einzigartige Vornamen pro Jahr
+
