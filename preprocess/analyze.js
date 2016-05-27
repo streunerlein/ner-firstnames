@@ -29,13 +29,26 @@ glob(config.files, function(err, matches) {
 
       return {
         year: year,
-        names: _.uniq(_.flatten(_.pluck(files, 'names'))),
-        people: _.uniq(_.flatten(_.pluck(files, 'people')))
+        names: _.uniq(_.flatten(_.pluck(files, 'names'), true)),
+        people: _.reject(_.uniq(_.flatten(_.pluck(files, 'people'), true)), _.isEmpty)
       };
     });
 
-    console.log("Read", processedFiles.length, "files");
-    console.log(byYears);
+    async.parallel([
+      function(cb) {
+        fs.writeFile("../data.json", JSON.stringify(byYears, null, 2), cb);
+      },
+      function(cb) {
+        fs.writeFile("../data.min.json", JSON.stringify(byYears), cb);
+      }
+    ], function(err) {
+      if (err) {
+        console.log(err);
+      }
+      else {
+        console.log("Data files written.");
+      }
+    });
   });
 });
 
