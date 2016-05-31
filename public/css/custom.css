@@ -1,0 +1,86 @@
+body {
+  position: relative;
+  padding-top: 70px;
+}
+
+h1.number {
+  font-size:10em;
+}
+
+.section {
+  height:100vh;
+  padding-top:100px;
+  box-sizing:content-box;
+}
+
+span.namecloud {
+  display:inline-block;
+  margin:0;
+  line-height:1em;
+  margin-right:0.1em;
+}
+
+.graph {
+  height:60vh;
+}
+
+.axis path,
+.axis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+
+.x.axis path {
+  display: none;
+}
+
+.legend {
+  cursor:pointer;
+}
+
+.inactive {
+  opacity:0.3;
+}
+
+.d3-tip {
+  background-color:rgba(250, 250, 250, 1);
+  display:block;
+  border:1px solid #aaa;
+  padding:5px;
+}
+
+.line {
+  fill: none;
+  stroke-width: 1.5px;
+}
+
+.line.color-1 {
+  stroke: steelblue;
+}
+.circle.color-1 {
+  fill: steelblue;
+}
+.area.color-1, rect.color-1 {
+  fill: steelblue;
+}
+
+.line.color-2 {
+  stroke: orange;
+}
+.circle.color-2 {
+  fill: orange;
+}
+rect.color-2 {
+  fill: orange;
+}
+
+.line.color-3 {
+  stroke: purple;
+}
+.circle.color-3 {
+  fill: purple;
+}
+rect.color-3 {
+  fill: purple;
+}

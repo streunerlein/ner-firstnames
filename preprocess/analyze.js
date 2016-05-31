@@ -86,6 +86,8 @@ function extractPeople(obj, content, cb) {
       return _.chain(variants)
         .map(splitTokens)
         .flatten()
+        // .map(splitHyphens)
+        // .flatten()
         .uniq()
         .reject(isStopName)
         .reject(hasDot)
@@ -110,6 +112,7 @@ function extractNames(obj, people, cb) {
   cb(null, obj, names);
 }
 
+function splitHyphens(str) { return str.split("-"); }
 function hasHyphen(str) { return str.indexOf('-') !== -1; }
 function sum(memo, num){ return memo + num; }
 function splitVariants(name) { return name.split("|"); }

@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Vornamen in Text+Berg – Eine Analyse</title>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/custom.css" rel="stylesheet">
+  </head>
+  <body data-spy="scroll" data-target="#mainnav">
+    <div class="container">
+      <div class="header clearfix">
+        <nav class="navbar navbar-default navbar-fixed-top">
+          <div class="container">
+            <div class="navbar-header">
+              <a class="navbar-brand" href="#">Vornamen in Text+Berg – Eine Analyse</a>
+            </div>
+
+            <div class="collapse navbar-collapse" id="mainnav">
+              <ul class="nav navbar-nav navbar-right">
+                <li><a data-scroll href="#firstnames">Firstnames</a></li>
+                <li><a data-scroll href="#hyphens">Hyphens in names</a></li>
+                <li><a data-scroll href="#lengthmatters">Length matters</a></li>
+                <li><a data-scroll href="#nameintime">Popularity</a></li>
+                <li><a data-scroll href="#top10">Top 10</a></li>
+              </ul>
+            </div><!-- /.navbar-collapse -->
+          </div>
+        </nav>
+      </div>
+
+      <div class="row section" id="firstnames">
+        <div class="col-lg-5">
+          <h1 class="number nice-number count_totalnames">0</h1>
+        </div>
+        <div class="col-lg-7">
+          <h2>unterschiedliche Vornamen im Text+Berg Korpus<br /><small>von <span class="count_yearlower">0</span>–<span class="count_yearupper">0</span></small></h2>
+          <div class="graph graph-namegraph">
+          </div>
+        </div>
+      </div>
+
+      <div class="row section" id="hyphens">
+        <div class="col-lg-5">
+          <h2>Im Jahre</h2>
+          <h1 class="number count_yearmosthyphens">0</h1>
+          <h3>hatten die meisten Namen Bindestriche (<span class="count_yearmosthyphenspercentage">0</span>%)
+          </h3>
+          <h2><small>z.B. <span class="example_yearmosthyphens"></span></small></h2>
+        </div>
+        <div class="col-lg-7">
+          <h2>Bemerkenswert: die Anzahl von Vornamen mit Bindestrichen scheint nicht abzunehmen.</h2>
+          <div class="graph graph-hyphengraph">
+          </div>
+        </div>
+      </div>
+
+      <div class="row section" id="lengthmatters">
+        <div class="col-lg-5">
+          <div class="row">
+            <div class="col-lg-5" style="text-align:right;">
+              <h1 class="number count_highestlength">0</h1>
+            </div>
+            <div class="col-lg-7" style="margin-top:2em;">
+              <h2>Zeichen</h2>
+              <h4>lang ist der längste Name, mit Bindestrich</h4>
+              <h2><small>z.B. <span class="example_highestlength"></span></small></h2>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-5" style="text-align:right;">
+              <h1 style="font-size:8em" class="number count_highestpurelength">0</h1>
+            </div>
+            <div class="col-lg-7" style="margin-top:2em;">
+              <h3>Zeichen</h3>
+              <h4>ohne Bindestrich</h4>
+              <h2><small>z.B. <span class="example_highestpurelength"></span></small></h2>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-5" style="text-align:right;">
+              <h1 style="font-size:6em" class="number count_lowestlength">0</h1>
+            </div>
+            <div class="col-lg-7" style="margin-top:2em;">
+              <h4>Zeichen</h4>
+              <h4>lang sind die kleinsten Namen im Korpus.</h4>
+              <h2><small>z.B. <span class="example_lowestlength"></span></small></h2>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-7">
+          <h2><small>mit</small> <span class="count_highestlength">0</span> <small>Zeichen ist z.B.</small> <span class="example_highestlength"></span> <small>einer der längsten Namen. Die meisten Namen sind jedoch </small> <span class="count_mostlength">0-0</span> <small>Zeichen lang, wie z.B. </small> <span class="example_mostlength"></span>.</h2>
+          <div class="graph graph-lengthgraph">
+          </div>
+        </div>
+      </div>
+
+      <div class="row section" id="nameintime">
+        <div class="col-lg-5">
+          <h1 class="number">Anton</h1>
+        </div>
+        <div class="col-lg-7">
+          <h2>unterschiedliche Vornamen im Text+Berg Korpus<br /><small>von 1850–2015</small></h2>
+        </div>
+        <div class="col-lg-12">
+          <div class="graph graph-nametimegraph">
+          </div>
+        </div>
+      </div>
+
+      <div class="row section" id="top10">
+        <div class="col-lg-5">
+          <h1 class="number"><small>Top</small></br />10</h1>
+        </div>
+        <div class="col-lg-7">
+          <h2>unterschiedliche Vornamen im Text+Berg Korpus<br /><small>von 1850–2015</small></h2>
+        </div>
+      </div>
+
+      <footer class="footer">
+      </footer>
+
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://d3js.org/d3.v3.min.js"></script>
+    <script src="js/underscore.js"></script>
+    <script src="js/backbone.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/smoothscrollnav.js"></script>
+    <script src="js/graphs/Graph.js"></script>
+    <script src="js/graphs/NameGraph.js"></script>
+    <script src="js/graphs/HyphenGraph.js"></script>
+    <script src="js/graphs/LengthGraph.js"></script>
+    <script src="js/graphs/NameTimeGraph.js"></script>
+    <script src="js/setupGraphs.js"></script>
+    <script src="http://labratrevenge.com/d3-tip/javascripts/d3.tip.v0.6.3.js"></script>
+    <script>
+      setupGraphs([
+        {view: NameGraph, target:'.graph-namegraph'},
+        {view: HyphenGraph, target:'.graph-hyphengraph'},
+        {view: LengthGraph, target:'.graph-lengthgraph'},
+        {view: NameTimeGraph, target:'.graph-nametimegraph'},
+      ]);
+    </script>
+  </body>
+</html>
