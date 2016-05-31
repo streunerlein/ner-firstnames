@@ -24,59 +24,68 @@
                 <li><a data-scroll href="#lengthmatters">Length matters</a></li>
                 <li><a data-scroll href="#hyphens">Hyphens in names</a></li>
                 <li><a data-scroll href="#nameintime">Popularity</a></li>
-                <li><a data-scroll href="#top10">Top 10</a></li>
               </ul>
             </div><!-- /.navbar-collapse -->
           </div>
         </nav>
       </div>
 
+      <div class="row section">
+        <div class="col-md-6">
+          <img src="img/textberglogo.png" style="width:95%"/>
+        </div>
+        <div class="col-md-6">
+          <h1 style="font-size:1000%; margin-bottom:10vh;">Eine Analyse</h1>
+          <h2><a href="https://github.com/streunerlein/ner-firstnames">github.com/streunerlein/ner-firstnames</a></h2>
+        </div>
+      </div>
+
       <div class="row section" id="firstnames">
-        <div class="col-lg-5">
+        <div class="col-md-5">
           <h1 class="number nice-number count_totalnames">0</h1>
           <h2>unterschiedliche Vornamen im Text+Berg Korpus<br /><small>von <span class="count_yearlower">0</span>–<span class="count_yearupper">0</span></small></h2>
           <h3><span class="count_totalpeople nice-number number"></span><br /><small>Personen</small></h3>
         </div>
-        <div class="col-lg-7">
+        <div class="col-md-7">
           <div class="graph graph-namegraph">
           </div>
         </div>
       </div>
 
       <div class="row section" id="lengthmatters">
-        <div class="col-lg-5">
+        <div class="col-md-5">
           <div class="row">
-            <div class="col-lg-5" style="text-align:right;">
+            <div class="col-md-5" style="text-align:right;">
               <h1 class="number count_highestlength">0</h1>
             </div>
-            <div class="col-lg-7" style="margin-top:2em;">
+            <div class="col-md-7" style="margin-top:2em;">
               <h2>Zeichen</h2>
               <h4>lang ist der längste Name, mit Bindestrich</h4>
               <h2><small>z.B. <span class="example_highestlength"></span></small></h2>
             </div>
           </div>
           <div class="row">
-            <div class="col-lg-5" style="text-align:right;">
+            <div class="col-md-5" style="text-align:right;">
               <h1 style="font-size:8em" class="number count_highestpurelength">0</h1>
             </div>
-            <div class="col-lg-7" style="margin-top:2em;">
+            <div class="col-md-7" style="margin-top:2em;">
               <h3>Zeichen</h3>
               <h4>ohne Bindestrich</h4>
               <h2><small>z.B. <span class="example_highestpurelength"></span></small></h2>
             </div>
           </div>
           <div class="row">
-            <div class="col-lg-5" style="text-align:right;">
+            <div class="col-md-5" style="text-align:right;">
               <h1 style="font-size:6em" class="number count_lowestlength">0</h1>
             </div>
-            <div class="col-lg-7" style="margin-top:2em;">
+            <div class="col-md-7" style="margin-top:2em;">
               <h4>Zeichen</h4>
               <h4>lang sind die kleinsten Namen im Korpus.</h4>
               <h2><small>z.B. <span class="example_lowestlength"></span></small></h2>
             </div>
           </div>
         </div>
-        <div class="col-lg-7">
+        <div class="col-md-7">
           <h2><small>mit</small> <span class="count_highestlength">0</span> <small>Zeichen ist z.B.</small> <span class="example_highestlength"></span> <small>einer der längsten Namen. Die meisten Namen sind jedoch </small> <span class="count_mostlength">0-0</span> <small>Zeichen lang, wie z.B. </small> <span class="example_mostlength"></span>.</h2>
           <div class="graph graph-lengthgraph">
           </div>
@@ -84,14 +93,14 @@
       </div>
 
       <div class="row section" id="hyphens">
-        <div class="col-lg-5">
+        <div class="col-md-5">
           <h2>Im Jahre</h2>
           <h1 class="number count_yearmosthyphens">0</h1>
           <h3>hatten die meisten Namen Bindestriche (<span class="count_yearmosthyphenspercentage">0</span>%)
           </h3>
           <h2><small>z.B. <span class="example_yearmosthyphens"></span></small></h2>
         </div>
-        <div class="col-lg-7">
+        <div class="col-md-7">
           <h2>Bemerkenswert: die Anzahl von Vornamen mit Bindestrichen scheint nicht abzunehmen.</h2>
           <div class="graph graph-hyphengraph">
           </div>
@@ -99,30 +108,11 @@
       </div>
 
       <div class="row section" id="nameintime">
-        <div class="col-lg-5">
-          <h1 class="number">Anton</h1>
-        </div>
-        <div class="col-lg-7">
-          <h2>unterschiedliche Vornamen im Text+Berg Korpus<br /><small>von 1850–2015</small></h2>
-        </div>
-        <div class="col-lg-12">
+        <div class="col-md-12">
           <div class="graph graph-nametimegraph">
           </div>
         </div>
       </div>
-
-      <div class="row section" id="top10">
-        <div class="col-lg-5">
-          <h1 class="number"><small>Top</small></br />10</h1>
-        </div>
-        <div class="col-lg-7">
-          <h2>unterschiedliche Vornamen im Text+Berg Korpus<br /><small>von 1850–2015</small></h2>
-        </div>
-      </div>
-
-      <footer class="footer">
-      </footer>
-
     </div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>

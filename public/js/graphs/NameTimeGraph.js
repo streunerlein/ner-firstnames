@@ -8,7 +8,7 @@ var NameTimeGraph = Graph.extend({
   render: function() {
     var margin = {top: 20, right: 50, bottom: 20, left: 50};
     var width = Math.max(960, this.$el.width()) - margin.left - margin.right;
-    var height = this.$el.height() - margin.top - margin.bottom;
+    var height = this.$el.height() / 2 - margin.top - margin.bottom;
     var namesRankedByYear = _.chain(this.data)
       .map(function(entry) {
         return {
