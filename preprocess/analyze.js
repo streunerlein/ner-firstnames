@@ -21,8 +21,8 @@ glob(config.files, function(err, matches) {
     return;
   }
 
-  async.map(matches, processFile, function(err, processedFiles) {
-    var years = _.pluck(processedFiles, 'year');
+  async.mapLimit(matches, 100, processFile, function(err, processedFiles) {
+    var years = _.uniq(_.pluck(processedFiles, 'year'));
 
     var byYears = _.map(years, function(year) {
       var files = _.where(processedFiles, {'year': year});
@@ -33,6 +33,8 @@ glob(config.files, function(err, matches) {
         people: _.reject(_.uniq(_.flatten(_.pluck(files, 'people'), true)), _.isEmpty)
       };
     });
+
+    byYears = _.sortBy(byYears, function(d) { return d.year; });
 
     async.parallel([
       function(cb) {

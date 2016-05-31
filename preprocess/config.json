@@ -2,5 +2,17 @@
   "SAC": {
     "files": "../data/Text+Berg_Release_151_v01/XML/SAC/*ner.xml",
     "stopNames": ["secondo", "seconda"]
+  },
+  "Echo": {
+    "files": "../data/Text+Berg_Release_151_v01/XML/Echo_des_Alpes/*ner.xml",
+    "stopNames": ["secondo", "seconda"]
+  },
+  "Alpine": {
+    "files": "../data/Text+Berg_Release_151_v01/XML/Alpine_Journal/*ner.xml",
+    "stopNames": ["secondo", "seconda"]
+  },
+  "ALL": {
+    "files": "../data/Text+Berg_Release_151_v01/XML/**/*ner.xml",
+    "stopNames": ["secondo", "seconda"]
   }
 }

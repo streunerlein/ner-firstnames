@@ -26,6 +26,8 @@
         $(selector).text(str);
       }
 
+      window.nameData = data;
+
       var hasHyphen = function(name) { return name.indexOf('-') !== -1; };
       var uniqNames = _.uniq(_.flatten(_.pluck(data, 'names')));
       var uniqPureNames = _.reject(uniqNames, hasHyphen);
@@ -46,6 +48,7 @@
         ".count_yearmosthyphens": _.last(sortedByHyphenPercentage).year,
         ".count_yearmosthyphenspercentage": parseInt(_.last(sortedByHyphenPercentage).hyphenPercentage * 100, 10),
         ".count_mostlength": "5–7",
+        ".count_totalpeople": _.flatten(_.pluck(data, 'people')).length,
         ".example_highestlength": function() { return _.sample(_.filter(uniqNames, function(d) { return d.length == maxLength; })); },
         ".example_lowestlength": function() { return _.sample(_.filter(uniqNames, function(d) { return d.length == minLength; })); },
         ".example_highestpurelength": function() { return _.sample(_.filter(uniqPureNames, function(d) { return d.length == maxPureLength; })); },
